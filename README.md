@@ -25,6 +25,9 @@ Output should look like:
 ### Advanced Usage
 
 Change the climate data by replacing inc_climate.tmy2 with a TYM2 or TYM3 file (add link to where these are on the internet, probably NREL). 
+For more information about TYM2 files, please visit http://gridlab-d.shoutwiki.com/wiki/Climate_Guide.
+For more TYM2 files, visit this link https://rredc.nrel.gov/solar/old_data/nsrdb/1991-2005/tmy3/by_state_and_city.html.
+Some files are in TYM3 format, gridlabd can handle this format as well. But please change the name of the file to `inc_climate.tmy2`.
 
 You can change the house energy efficiency metrics (square footage, insulation, glazing, etc.) by editing them in LoadSimGLD.py in the text describing the super_house object. There is a docstring above the object with the label SUPER HOUSE OBJECT BELOW.
 
