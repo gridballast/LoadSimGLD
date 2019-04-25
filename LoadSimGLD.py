@@ -1,4 +1,4 @@
-import os, omf, csv
+import os, csv
 from matplotlib import pyplot as plt
 import matplotlib.dates as mdates
 import argparse
@@ -344,7 +344,7 @@ if __name__ == '__main__':
 	#TODO: warning text 'Illegal input. Usage: "python LoadSimGLD <load_type>" where load_type is one of ...
 	#Parse Command Line
 	if len(sys.argv) == 1:
-		modelType = 'Waterheater'
+		modelType = 'Refrigerator'
 	else:
 		parser = argparse.ArgumentParser(description='Simulates heat/cool power use on a canonical .glm single house model')
 		parser.add_argument(
