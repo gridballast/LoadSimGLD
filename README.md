@@ -6,12 +6,12 @@ This software generates load shapes for a given device type. Device types includ
 
 Install by downloading from  (insert URL).
 
-You need some requirements:
--python 2.7
--pyplot from matplotlib
--argparse
--dates from matplotlib
--pvlib
+You need some requirements:  
+-python 2.7  
+-pyplot from matplotlib  
+-argparse  
+-dates from matplotlib  
+-pvlib 
 
 You can install all of these with pip install <'package name'>
 
