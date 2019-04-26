@@ -111,6 +111,7 @@ def runGld(modelType):
 		outFile.write(data)
 
 	os.system('gridlabd '+'temp_super_house.glm')
+	print os.system('which gridlabd')
 	os.remove('temp_super_house.glm')
 	return graphHandler(graphType, heating_system_type, cooling_system_type, system_type_name)
 
@@ -344,7 +345,7 @@ if __name__ == '__main__':
 	#TODO: warning text 'Illegal input. Usage: "python LoadSimGLD <load_type>" where load_type is one of ...
 	#Parse Command Line
 	if len(sys.argv) == 1:
-		modelType = 'Refrigerator'
+		modelType = 'Waterheater'
 	else:
 		parser = argparse.ArgumentParser(description='Simulates heat/cool power use on a canonical .glm single house model')
 		parser.add_argument(
