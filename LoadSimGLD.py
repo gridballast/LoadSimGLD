@@ -145,7 +145,7 @@ def plotLoadHouseHeat(heating_system_type, system_type_name, location):
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
 	# Plot Heat and AC load
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -168,7 +168,7 @@ def plotLoadHouseCool(cooling_system_type, system_type_name, location):
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
 	# Plot Heat and AC load
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -189,7 +189,7 @@ def plotLoadWaterheater(location):
 		# Burn the headers.
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -210,7 +210,7 @@ def plotLoadEV(location):
 		# Burn the headers.
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -231,7 +231,7 @@ def plotFridge(location):
 		# Burn the headers.
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -252,7 +252,7 @@ def plotFreezer(location):
 		# Burn the headers.
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -273,7 +273,7 @@ def plotClotheswasher(location):
 		# Burn the headers.
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
@@ -294,7 +294,7 @@ def plotDryer(location):
 		# Burn the headers.
 		fileOb.readline()
 	data = list(csv.DictReader(fileOb))
-	plt.switch_backend('MacOSX')
+	# plt.switch_backend('MacOSX')
 	plt.figure()
 	formatter = mdates.DateFormatter('%Y-%m-%d')
 	dates = mdates.datestr2num([''.join(x.get('# timestamp')) for x in data])
